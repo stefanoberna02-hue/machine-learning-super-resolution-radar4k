@@ -94,7 +94,7 @@ adapted model on the SLAM-RF test data.
 
 <p align="center">
   <img
-    src="./images/radarhd_reference_cdf.jpg"
+    src="./images/slam_rf_cdf_png"
     alt="CDF of Chamfer and modified Hausdorff errors for the SLAM-RF adaptation"
     width="900"
   >
@@ -113,7 +113,7 @@ original RadarHD researchers:
 
 <p align="center">
   <img
-    src="./images/slam_rf_cdf.png"
+    src="./images/radarhd_reference_cdf.jpg"
     alt="Reference CDF associated with the original RadarHD work"
     width="900"
   >
