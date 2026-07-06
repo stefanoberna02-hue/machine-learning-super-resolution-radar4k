@@ -33,7 +33,7 @@ the **SLAM-RF** dataset. The project focuses on:
 
 <p align="center">
   <img
-    src="./images/seeding_researchers_overview.png"
+    src="./images/radarhd_overview.png"
     alt="Conceptual overview of the RadarHD super-resolution pipeline"
     width="900"
   >
