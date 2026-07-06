@@ -94,7 +94,7 @@ adapted model on the SLAM-RF test data.
 
 <p align="center">
   <img
-    src="./images/slam_rf_cdf_png"
+    src="./images/slam_rf_cdf.png"
     alt="CDF of Chamfer and modified Hausdorff errors for the SLAM-RF adaptation"
     width="900"
   >
