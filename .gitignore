@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Editors and operating systems
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Local configuration, credentials, and secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# ---------------------------------------------------------------------------
+# Logs, temporary files, and archives
+# ---------------------------------------------------------------------------
+*.log
+*.logs
+*.out
+*.err
+*.tmp
+*.temp
+*.bak
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# ---------------------------------------------------------------------------
+# Training, evaluation, and generated artifacts
+# ---------------------------------------------------------------------------
+logs/
+checkpoints/
+outputs/
+predictions/
+runs/
+wandb/
+
+processed_imgs*/
+generated_pcd*/
+dataset_SLAM*/
+
+*.pt
+*.pth
+*.ckpt
+*.pcd
+
+# ---------------------------------------------------------------------------
+# Restricted SLAM-RF data
+#
+# Ignore every raw file in these two directories, except the two explicitly
+# authorized reduced structural examples. Their filenames remain identical to
+# the original filenames expected by the scripts.
+# ---------------------------------------------------------------------------
+create_dataset/RadarHD-dataset-1/lidar_pcl/*
+!create_dataset/RadarHD-dataset-1/lidar_pcl/112_fwd.csv
+
+create_dataset/RadarHD-dataset-1/radar/*
+!create_dataset/RadarHD-dataset-1/radar/112_read.pkl
+
+# Keep optional documentation placed inside the data directories.
+!create_dataset/RadarHD-dataset-1/lidar_pcl/README.md
+!create_dataset/RadarHD-dataset-1/radar/README.md
+
+# Intentionally tracked in the private repository:
+# - archive/
+# - docs/
+# - images/
+# - cluster/
+
+# digest due to bash files used on cluster
+cluster/rcp_config.sh
+cluster/delete_jobs_all
