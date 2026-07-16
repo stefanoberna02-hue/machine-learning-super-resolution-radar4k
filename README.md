@@ -1,17 +1,20 @@
 # Radar4K: Adapting RadarHD to the SLAM-RF Dataset
-
 > **Repository status**
 >
-> This is a personal, private archival repository for a group project developed
-> at EPFL. It contains code and documentation created by the student group,
-> adaptations of third-party research code, and references to restricted data.
-> It is **not** a claim of exclusive authorship or ownership by the repository
-> maintainer.
+> This repository is a sanitized public release of a group project developed at
+> EPFL. It contains code and documentation produced by the student group,
+> together with adaptations of third-party research code and references to
+> restricted data that are not redistributed here.
 >
-> The restricted SLAM-RF dataset is not licensed for general redistribution.
-> A future public repository must exclude the complete dataset, restricted
-> derivatives, sensitive outputs, private cluster paths, and any other material
-> that has not been cleared for publication.
+> The SLAM-RF dataset used in this project was provided under restricted-access
+> conditions and is not licensed for public redistribution. This repository
+> excludes the complete dataset, derived datasets, trained checkpoints,
+> sensitive outputs, private cluster configuration, and any material that has
+> not been cleared for publication.
+>
+> The project was jointly developed by the student team; maintenance of this
+> repository by Stefano Bernasconi does **not** imply exclusive authorship or
+> ownership of the group work.
 
 ## Overview
 
@@ -41,9 +44,9 @@ the **SLAM-RF** dataset. The project focuses on:
 
 <p align="center">
   <em>
-    Conceptual overview reproduced from the original RadarHD research
-    materials. Credit: Prabhakara et al. The exact upstream source and reuse
-    status must be confirmed before a public release.
+    Conceptual overview reproduced from the original RadarHD research materials.
+    Credit: Prabhakara et al. Reuse may remain subject to the rights of the
+    original authors and the applicable upstream terms.
   </em>
 </p>
 
@@ -55,14 +58,17 @@ This project was developed as part of **CS-433 Machine Learning at EPFL** by:
 - S. Bernasconi
 - A. Dell'Orto
 
+For context, this project contributed to the final CS-433 Machine Learning grade
+of **6/6** received by the repository maintainer, **Stefano Bernasconi**.
+
 The work was supervised and supported by the **EPFL Laboratory of Sensing and
 Networking Systems (SENS Lab)**, which provided access to the proprietary
 SLAM-RF dataset used in the experiments.
 
 The three students remain the authors of their joint project contributions.
-This personal repository is maintained by S. Bernasconi for private archival,
-research, and portfolio purposes and must not be interpreted as assigning
-exclusive authorship of the group work to a single contributor.
+This public repository is maintained by S. Bernasconi for documentation,
+academic reference, and portfolio purposes and must not be interpreted as
+assigning exclusive authorship of the group work to a single contributor.
 
 ## Upstream research and code
 
@@ -102,9 +108,9 @@ adapted model on the SLAM-RF test data.
 
 <p align="center">
   <em>
-    SLAM-RF results produced by the student group. Because the figure is derived
-    from restricted data, its inclusion in a future public repository requires
-    confirmation from the SENS Lab.
+    SLAM-RF results produced by the student group. The figure is included for
+    documentation and academic context; reuse may remain subject to restrictions
+    associated with the proprietary SLAM-RF dataset.
   </em>
 </p>
 
@@ -121,18 +127,19 @@ original RadarHD researchers:
 
 <p align="center">
   <em>
-    Reference image attributed to the original RadarHD researchers. Confirm the
-    exact source and applicable reuse terms before publishing it.
+    Reference image attributed to the original RadarHD researchers and included
+    for comparison. Reuse may remain subject to the rights of the original
+    authors and the applicable upstream terms.
   </em>
 </p>
 
 ## Data policy
 
-The full SLAM-RF dataset and its complete derived datasets must remain outside
-Git history unless a separate written authorization explicitly permits their
-distribution.
+The full SLAM-RF dataset and its derived datasets are not included in this
+repository and must remain outside Git history unless a separate written
+authorization explicitly permits their distribution.
 
-The local working copy may keep the full authorized data at:
+Authorized users are expected to place the data locally under:
 
 ```text
 create_dataset/RadarHD-dataset-1/
@@ -140,10 +147,8 @@ create_dataset/RadarHD-dataset-1/
 └── radar/
 ```
 
-The private repository may instead
-contain one **small, explicitly authorized, structurally representative sample**
-for each modality. These samples are intended only to document file structure
-and implementation choices; they are not sufficient to reproduce training.
+No original, reduced, or structurally representative SLAM-RF samples are
+redistributed in this public repository.
 
 ## Repository structure
 
@@ -187,7 +192,6 @@ and implementation choices; they are not sufficient to reproduce training.
 │
 ├── docs/
 ├── images/
-└── archive/
 ```
 
 ## Environment setup
@@ -408,14 +412,14 @@ complete experiments. Full reproduction also requires:
 - authorized access to the SLAM-RF dataset;
 - the exact preprocessing and split configuration;
 - matching package versions and container environment;
-- access to suitable computational resources;
+- access to suitable computational resources.
 
 ## Images and reports
 
 The `images/` directory contains:
 
 - figures from the original RadarHD work, included as a reference for comparison;
-- the student group's original cumulative distribution function figure, generated from the results obtained on the SLAM-RF dataset;
+- the student group's original cumulative distribution function figure, generated from the results obtained on the SLAM-RF dataset.
 
 The `docs/` directory contains:
 
@@ -463,7 +467,7 @@ the source is publicly visible.
 
 ## Disclaimer
 
-This repository is provided for private archival and research purposes. No
-warranty is made regarding correctness, fitness for a particular purpose,
-reproducibility, or portability to systems other than those used during the
-project.
+This repository is provided for documentation, academic reference, and portfolio
+purposes. No warranty is made regarding correctness, fitness for a particular
+purpose, reproducibility, or portability to systems other than those used during
+the project.
